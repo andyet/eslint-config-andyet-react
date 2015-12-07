@@ -13,7 +13,7 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "babel-eslint": "^4.1.5",
+    "babel-eslint": "^5.0.0 || ^5.0.0-beta4",
     "eslint": "^1.10.1",
     "eslint-plugin-react": "^3.10.0"
   },
