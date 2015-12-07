@@ -1,0 +1,27 @@
+{
+  "name": "eslint-config-andyet-react",
+  "description": "eslint configuration used in andyet react projects",
+  "version": "1.0.0",
+  "author": "Luke Karrys <luke@lukekarrys.com>",
+  "bugs": {
+    "url": "https://github.com/requiresafe/eslint-config-andyet-react/issues"
+  },
+  "homepage": "https://github.com/requiresafe/eslint-config-andyet-react#readme",
+  "keywords": [
+    "eslint"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "peerDependencies": {
+    "babel-eslint": "^4.1.5",
+    "eslint": "^1.10.1",
+    "eslint-plugin-react": "^3.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/requiresafe/eslint-config-andyet-react.git"
+  },
+  "scripts": {
+    "test": "echo \"no tests\""
+  }
+}
