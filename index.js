@@ -8,8 +8,7 @@ module.exports = {
   },
 
   "plugins": [
-    "react",
-    "classes"
+    "react"
   ],
 
   "globals": {
