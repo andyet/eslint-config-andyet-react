@@ -1,9 +1,20 @@
 module.exports = {
-  "parser": "babel-eslint",
+  // Wait for babel-eslint to support babel 6
+  // https://github.com/babel/babel-eslint/issues/199
+  // https://github.com/babel/babel-eslint/issues/218
+  //"parser": "babel-eslint",
+
+  // Remove this once we are using babel 6
+  "ecmaFeatures": {
+    "modules": true,
+    "jsx": true
+  }
 
   "env": {
     "browser": false,
-    "node": true,
+    "node": false,
+    "commonjs": true,
+    // Remove this once we are using babel 6
     "es6": true
   },
 
