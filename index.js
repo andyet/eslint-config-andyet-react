@@ -4,7 +4,7 @@ module.exports = {
   // https://github.com/babel/babel-eslint/issues/218
   //"parser": "babel-eslint",
 
-  // Remove this once we are using babel 6
+  // Remove this once we are using babel-eslint
   "ecmaFeatures": {
     "modules": true,
     "jsx": true
@@ -14,7 +14,7 @@ module.exports = {
     "browser": false,
     "node": false,
     "commonjs": true,
-    // Remove this once we are using babel 6
+    // Remove this once we are using  babel-eslint
     "es6": true
   },
 
