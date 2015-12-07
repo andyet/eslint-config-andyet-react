@@ -91,7 +91,6 @@ module.exports = {
     "no-var": 2,
     "brace-style": [2, "1tbs", {"allowSingleLine": true}],
     "func-names": 2,
-    "strict": [2, "function"],
     "object-shorthand": [2, "always"],
     "prefer-const": 2,
     "arrow-parens": [2, "as-needed"],
