@@ -8,7 +8,7 @@ module.exports = {
   "ecmaFeatures": {
     "modules": true,
     "jsx": true
-  }
+  },
 
   "env": {
     "browser": false,
