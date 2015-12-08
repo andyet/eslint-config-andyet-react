@@ -74,7 +74,7 @@ module.exports = {
     "comma-spacing": [2, {"before": false, "after": true}],
     "comma-style": [2, "last"],
     "curly": [2, "multi-line"],
-    "space-before-function-paren": [2, { "anonymous": "always", "named": "never" }],
+    "space-before-function-paren": [2, {"anonymous": "always", "named": "never"}],
     "space-after-keywords": [2, "always"],
     "space-before-blocks": [2, "always"],
     "space-in-parens": [2, "never"],
