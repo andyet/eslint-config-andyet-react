@@ -1,20 +1,9 @@
 module.exports = {
-  // Wait for babel-eslint to support babel 6
-  // https://github.com/babel/babel-eslint/issues/199
-  // https://github.com/babel/babel-eslint/issues/218
-  //"parser": "babel-eslint",
-
-  // Remove this once we are using babel-eslint
-  "ecmaFeatures": {
-    "modules": true,
-    "jsx": true
-  },
+  "parser": "babel-eslint",
 
   "env": {
     "browser": true,
-    "commonjs": true,
-    // Remove this once we are using  babel-eslint
-    "es6": true
+    "commonjs": true
   },
 
   "plugins": [
@@ -85,7 +74,7 @@ module.exports = {
     "comma-spacing": [2, {"before": false, "after": true}],
     "comma-style": [2, "last"],
     "curly": [2, "multi-line"],
-    "space-before-function-paren": [2, "always"],
+    "space-before-function-paren": [2, { "anonymous": "always", "named": "never" }],
     "space-after-keywords": [2, "always"],
     "space-before-blocks": [2, "always"],
     "space-in-parens": [2, "never"],
