@@ -11,8 +11,7 @@ module.exports = {
   },
 
   "env": {
-    "browser": false,
-    "node": false,
+    "browser": true,
     "commonjs": true,
     // Remove this once we are using  babel-eslint
     "es6": true
@@ -104,7 +103,7 @@ module.exports = {
     "func-names": 2,
     "object-shorthand": [2, "always"],
     "prefer-const": 2,
-    "arrow-parens": [2, "as-needed"],
+    "arrow-parens": [2, "always"],
     "prefer-arrow-callback": 2,
     "prefer-template": 2,
     "jsx-quotes": [2, "prefer-single"],
@@ -112,12 +111,14 @@ module.exports = {
     "no-empty-pattern": 2,
     "arrow-body-style": [2, "as-needed"],
     "no-case-declarations": 2,
+    "no-constant-condition": 2,
 
     // React
     "react/display-name": [2, {"acceptTranspilerName": true}],
-    "react/jsx-boolean-value": [2, "always"],
+    "react/forbid-prop-types": [1, {"forbid": ["any", "array", "object"]}],
+    "react/jsx-boolean-value": [2, "never"],
     "react/jsx-closing-bracket-location": [1, {"location": "tag-aligned"}],
-    "react/jsx-curly-spacing": [2, "never", {"allowMultiline": false}],
+    "react/jsx-curly-spacing": [2, "never"],
     "react/jsx-key": 2,
     "react/jsx-max-props-per-line": [2, {"maximum": 3}],
     "react/jsx-indent-props": [2, 2],
@@ -131,12 +132,12 @@ module.exports = {
     "react/jsx-uses-vars": 2,
     "react/no-danger": 0,
     "react/no-did-mount-set-state": [2, "allow-in-func"],
-    "react/no-did-update-set-state": 2,
+    "react/no-did-update-set-state": [2, "allow-in-func"],
     "react/no-direct-mutation-state": 2,
     "react/no-multi-comp": 0,
     "react/no-unknown-property": 2,
     "react/prefer-es6-class": 0,
-    "react/prop-types": 2,
+    "react/prop-types": 1,
     "react/react-in-jsx-scope": 2,
     "react/self-closing-comp": 2,
     "react/wrap-multilines": 2,
