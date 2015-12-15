@@ -104,7 +104,7 @@ module.exports = {
 
     // React
     "react/display-name": [2, {"acceptTranspilerName": true}],
-    "react/forbid-prop-types": [1, {"forbid": ["any", "array", "object"]}],
+    "react/forbid-prop-types": [1, {"forbid": ["any"]}],
     "react/jsx-boolean-value": [2, "never"],
     "react/jsx-closing-bracket-location": [1, {"location": "tag-aligned"}],
     "react/jsx-curly-spacing": [2, "never"],
@@ -115,6 +115,7 @@ module.exports = {
     "react/jsx-no-duplicate-props": [2, {"ignoreCase": false}],
     "react/jsx-no-literals": 0,
     "react/jsx-no-undef": 2,
+    "react/jsx-pascal-case": 2,
     "react/jsx-sort-prop-types": 0,
     "react/jsx-sort-props": 0,
     "react/jsx-uses-react": 2,
