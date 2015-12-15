@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-andyet-react",
   "description": "eslint configuration used in andyet react projects",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Luke Karrys <luke@lukekarrys.com>",
   "bugs": {
     "url": "https://github.com/requiresafe/eslint-config-andyet-react/issues"
