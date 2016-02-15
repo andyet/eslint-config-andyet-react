@@ -13,7 +13,8 @@ module.exports = {
   "globals": {
     "document": false,
     "navigator": false,
-    "window": false
+    "window": false,
+    "process": false
   },
 
   "extends": "eslint:recommended",
