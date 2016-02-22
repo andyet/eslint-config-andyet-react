@@ -12,16 +12,23 @@
   ],
   "license": "MIT",
   "main": "index.js",
+  "devDependencies": {
+    "babel-eslint": "^5.0.0",
+    "eslint": "^2.0.0",
+    "eslint-plugin-react": "^4.0.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.4.0"
+  },
   "peerDependencies": {
-    "babel-eslint": "^5.0.0 || ^5.0.0-beta4",
-    "eslint": "^1.10.1",
-    "eslint-plugin-react": "^3.10.0"
+    "babel-eslint": "^5.0.0",
+    "eslint": "^2.0.0",
+    "eslint-plugin-react": "^4.0.0"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/requiresafe/eslint-config-andyet-react.git"
   },
   "scripts": {
-    "test": "echo \"no tests\""
+    "test": "tape test.js | tap-spec"
   }
 }
