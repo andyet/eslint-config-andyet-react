@@ -4,9 +4,9 @@
   "version": "2.0.2",
   "author": "Luke Karrys <luke@lukekarrys.com>",
   "bugs": {
-    "url": "https://github.com/requiresafe/eslint-config-andyet-react/issues"
+    "url": "https://github.com/andyet/eslint-config-andyet-react/issues"
   },
-  "homepage": "https://github.com/requiresafe/eslint-config-andyet-react#readme",
+  "homepage": "https://github.com/andyet/eslint-config-andyet-react#readme",
   "keywords": [
     "eslint"
   ],
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/requiresafe/eslint-config-andyet-react.git"
+    "url": "git://github.com/andyet/eslint-config-andyet-react.git"
   },
   "scripts": {
     "test": "tape test.js | tap-spec"
