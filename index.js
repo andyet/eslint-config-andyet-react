@@ -139,9 +139,10 @@ module.exports = {
     "react/jsx-space-before-closing": 2,
     "react/jsx-uses-react": 2,
     "react/jsx-uses-vars": 2,
+    "react/jsx-wrap-multilines": 2,
     "react/no-danger": 0,
-    "react/no-did-mount-set-state": [2, "allow-in-func"],
-    "react/no-did-update-set-state": [2, "allow-in-func"],
+    "react/no-did-mount-set-state": 2,
+    "react/no-did-update-set-state": 2,
     "react/no-direct-mutation-state": 2,
     "react/no-deprecated": 2,
     "react/no-is-mounted": 2,
@@ -153,7 +154,6 @@ module.exports = {
     "react/self-closing-comp": 2,
     "react/sort-comp": 0,
     "react/sort-prop-types": 0,
-    "react/wrap-multilines": 2,
 
     // Some stuff copied from standard
     "accessor-pairs": 2,
