@@ -9,7 +9,7 @@ This is the base set of eslint rules for andyet react projects
 
 ## Installation
 
-1. `npm install eslint && eslint-config-andyet-react && babel-eslint && eslint-plugin-react --save-dev`
+1. `npm install eslint eslint-config-andyet-react babel-eslint eslint-plugin-react --save-dev`
 2. Put the following in `.eslintrc`
 
     ```
