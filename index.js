@@ -7,7 +7,8 @@ module.exports = {
   },
 
   "plugins": [
-    "react"
+    "react",
+    "import"
   ],
 
   "globals": {
@@ -15,6 +16,14 @@ module.exports = {
     "navigator": false,
     "window": false,
     "process": false
+  },
+
+  "settings": {
+    "import/resolver": "webpack",
+    "import/ignore": [
+      "node_modules",
+      ".(svg|less|css|png|scss|jpg)$"
+    ]
   },
 
   "extends": "eslint:recommended",
@@ -154,6 +163,19 @@ module.exports = {
     "react/self-closing-comp": 2,
     "react/sort-comp": 0,
     "react/sort-prop-types": 0,
+
+    // Import plugin
+    "import/no-unresolved": [2, {commonjs: true}],
+    "import/named": 2,
+    "import/namespace": 2,
+    "import/default": 2,
+    "import/export": 2,
+    "import/no-named-as-default": 2,
+    "import/no-named-as-default-member": 2,
+    "import/no-duplicates": 2,
+    "import/unambiguous": 2,
+    "import/no-extraneous-dependencies": 2,
+    "import/no-mutable-exports": 2,
 
     // Some stuff copied from standard
     "accessor-pairs": 2,
