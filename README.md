@@ -1,49 +1,96 @@
-## eslint-config-andyet-react
+## eslint-config-andyet-frontend
 
-This is the base set of eslint rules for andyet react projects
+This is the base set of eslint rules for andyet frontend projects. It is built for linting different types of frontend code. If it doesn't work for the type of code you're writing, feel free to add it!
 
-### Configs:
+Currently it can lint for:
 
-* `andyet-react`: base config for react stuff with babel + webpack
-* `andyet-react/base`: config for just babel
+- babel
+- react
+- require/import/export
+- webpack specific require/import/export
 
-## Installation
 
-### React + Webpack + Babel
+## Installation and Usage
 
-1. `npm install eslint eslint-config-andyet-react babel-eslint eslint-plugin-{import,react} --save-dev`
-2. Put the following in `.eslintrc`
+Currently `eslint` doesn't provide a great way to package plugins with configs, so any plugin used by the config you choose will have to be installed. To make that a little easier, each plugin needed is listed below for easy `npm install`ing.
 
-    ```
-    {
-      "extends": ["andyet-react"]
-    }
-    ```
+The required plugins are also not listed as `peerDependencies` because otherwise all plugins would need to be installed even if they weren't being used.
 
-*If you are doing stuff in Webpack that's is different than Node's default module resolution, you'll also need to:*
 
-1. `npm install eslint-import-resolver-webpack --save-dev`
-2. Add the following to your `.eslintrc` (you can also add different settings [as described here](https://github.com/benmosher/eslint-plugin-import/tree/master/resolvers/webpack))
+### Base
 
-    ```
-    {
-        "settings": {
-            "import/resolver": "webpack"
-        }
-    }
-    ```
+The base config just includes the common rules for frontend browser development, along with the `import` plugin which handles some common cases of making sure the stuff you `require` is actually there.
+
+```
+npm install eslint eslint-config-andyet-frontend eslint-plugin-import --save-dev
+```
+
+```json
+{
+  "extends": ["andyet-frontend"]
+}
+```
 
 ### Babel
 
-1. `npm install eslint eslint-config-andyet-react babel-eslint --save-dev`
-2. Put the following in `.eslintrc`
+The `babel` config adds on top of the base config above, but makes sure the linter parses your code using the plugins and presets you've configured for `babel`.
 
-    ```
-    {
-      "extends": ["andyet-react/base"]
-    }
-    ```
+```
+npm install eslint eslint-config-andyet-frontend eslint-plugin-import babel-eslint --save-dev
+```
 
-## TODO:
+```json
+{
+  "extends": ["andyet-frontend/babel"]
+}
+```
 
-- Maybe rename since this to `eslint-config-andyet-frontend` with separate configs from `react`, `webpack`, and `base`?
+### React
+
+The `react-webpack` config adds on top of the `react` config above, but adds rules for `react` and also assumes you're using `babel`.
+
+```
+npm install eslint eslint-config-andyet-frontend eslint-plugin-import eslint-plugin-react babel-eslint --save-dev
+```
+
+```json
+{
+  "extends": ["andyet-frontend/react"]
+}
+```
+
+### React & Webpack
+
+The `react` config adds on top of the base config above, but also configures the import plugin so it will follow paths setup by your `webpack.config`.
+
+```
+npm install eslint eslint-config-andyet-frontend eslint-plugin-import eslint-plugin-react babel-eslint eslint-import-resolver-webpack --save-dev
+```
+
+```json
+{
+  "extends": ["andyet-frontend/react-webpack"]
+}
+```
+
+### Webpack
+
+The `webpack` config adds on top of the base config above, but adds rules for `react` and also assumes you're using `babel`.
+
+```
+npm install eslint eslint-config-andyet-frontend eslint-plugin-import eslint-import-resolver-webpack --save-dev
+```
+
+```json
+{
+  "extends": ["andyet-frontend/webpack"]
+}
+```
+
+## Contributing
+
+If you want to add some rules to this, they should go in a new file inside the [`configs/`](./configs/) directory.
+
+Then you can combine any of those configs into a top level config file. Check out [`react-webpack.js`](`./react-webpack.js`) for an example.
+
+You could also add a test file inside [`tests/`](./tests/), if you want to test that some specific syntax is linted properly.
