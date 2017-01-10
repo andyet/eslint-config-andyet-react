@@ -3,4 +3,4 @@ module.exports = {
     './configs/base.js',
     './configs/import.js'
   ]
-}
+};

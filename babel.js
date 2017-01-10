@@ -4,4 +4,4 @@ module.exports = {
     './configs/import.js',
     './configs/babel.js'
   ]
-}
+};

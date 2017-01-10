@@ -5,5 +5,5 @@ module.exports = {
       'node_modules',
       '.(svg|less|css|scss|styl|png|jpg|gif|mp4)$'
     ]
-  },
-}
+  }
+};

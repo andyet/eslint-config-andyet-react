@@ -6,17 +6,17 @@ module.exports = {
   rules: {
     // React
     'react/display-name': 2,
-    'react/forbid-prop-types': [1, {'forbid': ['any']}],
+    'react/forbid-prop-types': [1, { 'forbid': ['any'] }],
     'react/jsx-boolean-value': [2, 'never'],
-    'react/jsx-closing-bracket-location': [2, {'location': 'tag-aligned'}],
+    'react/jsx-closing-bracket-location': [2, { 'location': 'tag-aligned' }],
     'react/jsx-curly-spacing': [2, 'never'],
     'react/jsx-equals-spacing': [2, 'never'],
     'react/jsx-indent': [2, 2],
     'react/jsx-key': 2,
-    'react/jsx-max-props-per-line': [2, {'maximum': 4}],
+    'react/jsx-max-props-per-line': [2, { 'maximum': 4 }],
     'react/jsx-indent-props': [2, 2],
     'react/jsx-no-bind': 0,
-    'react/jsx-no-duplicate-props': [2, {'ignoreCase': false}],
+    'react/jsx-no-duplicate-props': [2, { 'ignoreCase': false }],
     'react/jsx-no-literals': 0,
     'react/jsx-no-undef': 2,
     'react/jsx-pascal-case': 2,
@@ -40,4 +40,4 @@ module.exports = {
     'react/sort-comp': 0,
     'react/sort-prop-types': 0
   }
-}
+};

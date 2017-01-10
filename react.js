@@ -5,4 +5,4 @@ module.exports = {
     './configs/babel.js',
     './configs/react.js'
   ]
-}
+};

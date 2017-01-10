@@ -6,4 +6,4 @@ module.exports = {
     './configs/react.js',
     './configs/webpack.js'
   ]
-}
+};

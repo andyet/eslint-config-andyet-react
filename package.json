@@ -12,6 +12,7 @@
     "eslint-import-resolver-webpack": "^0.8.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-react": "^6.0.0",
+    "git-validate": "^2.2.2",
     "outdent": "^0.3.0",
     "react": "^15.4.2",
     "tap-spec": "^4.1.1",
@@ -27,11 +28,18 @@
   "peerDependencies": {
     "eslint": "^3.0.0"
   },
+  "pre-commit": [
+    "validate",
+    "lint",
+    "test"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/andyet/eslint-config-andyet-react.git"
   },
   "scripts": {
-    "test": "tape test/*.js | tap-spec"
+    "lint": "eslint -c index.js .",
+    "test": "tape test/*.js | tap-spec",
+    "validate": "npm ls"
   }
 }

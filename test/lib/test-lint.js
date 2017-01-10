@@ -1,21 +1,24 @@
-const path = require('path')
-const CLIEngine = require('eslint').CLIEngine
+const path = require('path');
+const CLIEngine = require('eslint').CLIEngine;
 
-module.exports = function (code, file) {
+// eslint-disable-next-line no-undef
+const dir = __dirname;
+
+const displayMessage = (m) => `${m.line}:${m.column} ${m.ruleId} \`${m.source}\` ${m.message}`;
+
+module.exports = function testLint(code, file) {
   const lint = new CLIEngine({
     useEslintrc: false,
     allowInlineConfig: true,
-    cwd: path.resolve(__dirname, '..', '..'),
+    cwd: path.resolve(dir, '..', '..'),
     configFile: `${file}.js`
   }).executeOnText(code);
 
-  const { results: [result], errorCount, warningCount } = lint
+  const { results: [result], errorCount, warningCount } = lint;
 
   const ok = lint.errorCount === 0 && lint.warningCount === 0;
 
-  const message = result.messages.map((m) => {
-    return `${m.line}:${m.column} ${m.ruleId} \`${m.source}\` ${m.message}`
-  }).join(', ') || `No errors from ${file}.js config`
+  const message = result.messages.map(displayMessage).join(', ') || `No errors from ${file}.js config`;
 
   return {
     message,
@@ -23,5 +26,5 @@ module.exports = function (code, file) {
     errorCount,
     warningCount,
     result
-  }
-}
+  };
+};
