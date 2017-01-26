@@ -4,7 +4,7 @@
   "version": "2.1.2",
   "author": "Luke Karrys <luke@lukekarrys.com>",
   "bugs": {
-    "url": "https://github.com/andyet/eslint-config-andyet-react/issues"
+    "url": "https://github.com/andyet/eslint-config-andyet-frontend/issues"
   },
   "devDependencies": {
     "babel-eslint": "^7.0.0",
@@ -19,7 +19,7 @@
     "tape": "^4.5.1",
     "webpack": "^1.14.0"
   },
-  "homepage": "https://github.com/andyet/eslint-config-andyet-react#readme",
+  "homepage": "https://github.com/andyet/eslint-config-andyet-frontend#readme",
   "keywords": [
     "eslint"
   ],
@@ -35,7 +35,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/andyet/eslint-config-andyet-react.git"
+    "url": "git://github.com/andyet/eslint-config-andyet-frontend.git"
   },
   "scripts": {
     "lint": "eslint -c index.js .",
