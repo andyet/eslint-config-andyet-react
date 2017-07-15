@@ -7,17 +7,17 @@
     "url": "https://github.com/andyet/eslint-config-andyet-frontend/issues"
   },
   "devDependencies": {
-    "babel-eslint": "^7.0.0",
-    "eslint": "^3.13.1",
-    "eslint-import-resolver-webpack": "^0.8.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-react": "^6.0.0",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.2.0",
+    "eslint-import-resolver-webpack": "^0.8.3",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-react": "^7.1.0",
     "git-validate": "^2.2.2",
     "outdent": "^0.3.0",
-    "react": "^15.4.2",
+    "react": "^15.6.1",
     "tap-spec": "^4.1.1",
-    "tape": "^4.5.1",
-    "webpack": "^1.14.0"
+    "tape": "^4.7.0",
+    "webpack": "^3.2.0"
   },
   "homepage": "https://github.com/andyet/eslint-config-andyet-frontend#readme",
   "keywords": [
@@ -26,7 +26,7 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^3.0.0"
+    "eslint": "^4.0.0"
   },
   "pre-commit": [
     "validate",
